@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="box">
+      <div id="top-div">
+        <input type="text" id="search-input" placeholder="Search city" />
+        <div class="button-class">
+          <button id="search-button">
+            <img src="./assets/search.png" alt="search icon" id="lens-icon" />
+          </button>
+        </div>
+      </div>
+
+      <div id="bottom-div">
+        <div class="humidity-div">
+          <img
+            id="humidity-icon"
+            src="./assets/humidity.png"
+            alt="humidity icon"
+          />
+          <p id="humidity-level">48% <span>Humidity</span></p>
+        </div>
+
+        <div class="wind-speed-div">
+          <img src="./assets/wind.png" alt="wind-speed" id="wind-speed-icon" />
+          <p id="wind-speed-level">10.29km/hr <span>Wind Speed</span></p>
+        </div>
+      </div>
+
+      <div id="middle-div">
+        <img id="icon" src="./assets/rain.png" alt="weather condition" />
+        <p id="degree">7°C</p>
+        <p id="city">New York</p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
